@@ -1,0 +1,10 @@
+# git will ignore the following files:
+
+# Misc hidden files
+.DS_Store
+
+# VSCode preferences
+**/.vscode/*
+
+# pycache files
+**/__pycache__/*
