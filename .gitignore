@@ -8,3 +8,7 @@
 
 # pycache files
 **/__pycache__/*
+
+
+# databases
+*.sqlite3
