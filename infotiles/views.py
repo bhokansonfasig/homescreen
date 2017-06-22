@@ -7,6 +7,15 @@ class DesktopView(TemplateView):
     template_name = "infotiles/desktop.html"
 
     def get_context_data(self, **kwargs):
-        context = super(DesktopView,self).get_context_data(**kwargs)
+        context = super().get_context_data(**kwargs)
         context['name'] = "Ben"
+        return context
+
+
+class BaseTileView(TemplateView):
+    """View base calss for single tile"""
+    template_name = "infotiles/tilebase.html"
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
         return context
